@@ -1,5 +1,9 @@
 async function getAllPoems () {
   const res = await fetch('/api/get_all_poems')
+  const data = await res.json()
+  data.forEach(poem => {
+    poem.author
+  });
 }
 
 module.exports = router
