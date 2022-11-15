@@ -30,8 +30,15 @@
       center: [-79.999732, 40.4374],
       zoom: 11
     });
-
-   // we will add more code here in the next steps
+    
+    map.on('load', () => {
+      map.addSource('trees', {
+      type: 'geojson',
+      data: './trees.geojson'
+    });
+    // add heatmap layer here
+    // add circle layer here
+    });
 
   </script>
 </body>
