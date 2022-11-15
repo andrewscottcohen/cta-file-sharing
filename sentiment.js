@@ -1,5 +1,5 @@
 async function getAllPoems () {
-  const res = await fetch('/api/get_all_poems')
+  const res = await fetch('/api/poems')
   const data = await res.json()
   data.forEach(poem => {
     poem.author
